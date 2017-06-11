@@ -97,7 +97,7 @@ def create_grid(first_gen):
 
     return grid
 
-# Evolv the grid using Conway's GOL rules
+# Evolve the grid using Conway's GOL rules
 def next_grid_state(grid, row, col):
     ones = 0
 
@@ -129,12 +129,12 @@ def evolve_grid(grid):
 
 # Creates the hash 
 def get_hash(grid):
-    hsh = [0] * HASH_SIZE
-    hsh[0] = 1
+    hsh = grid[0]
 
-    for row in grid:
-        for i in range(1, len(row)):
-            hsh[i] = hsh[i] ^ row[i]
+    for i in range(1, len(grid)):
+        hsh = xor_arrays(hsh, grid[i])
+
+    hsh[0] = 1
 
     return hsh
 
