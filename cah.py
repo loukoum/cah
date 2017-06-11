@@ -34,8 +34,8 @@ def xor_arrays(array0, array1):
     return array
 
 # Create the initial array of INIT_SIZE size
-# If the initial array has lenght > INIT_SIZE
-# it cuts it in half and xor the two halfs into one
+# If the initial array has length > INIT_SIZE
+# it cuts it in half and xor the two halves into one
 def create_initial(string):
     array = str_to_intarray(str_to_bin(string))
 
@@ -46,7 +46,7 @@ def create_initial(string):
 
     return array
 
-# return the next state of the abc neighborhood
+# Return the next state of the abc neighborhood
 def get_next_state(a, b, c):
     if (a == 0 and b == 0 and c == 0):
         return 1
