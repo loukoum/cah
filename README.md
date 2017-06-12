@@ -16,8 +16,8 @@ This is a hashing function I made using cellular automata in python3. It uses th
 The output is a N bit(default is 256b) hex string.
 To run it, use: "python3 cah.py input salt iterations" where:
 
-	- input: the input to hashed
-	- salt: the salt
-	- iterations: the number of hashing iterations
+	- input: the input to hash
+	- salt: the salt to apply
+	- iterations: the number of times to hash the string
 
 This project is not meant to create a secure hashing function but to show a practical way of using cellular automata. If you find any practical use of this please let me know!
